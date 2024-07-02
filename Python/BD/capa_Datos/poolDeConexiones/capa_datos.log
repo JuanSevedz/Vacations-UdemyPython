@@ -498,3 +498,15 @@
             Id_Persona: 31, Nombre: Juanse,
             Apellido: ved, Email: jvedz@mail.com
         
+08:44:07 AM: DEBUG [persona.py:47] 
+            Id_Persona: 1, Nombre: Juan,
+            Apellido: Perez, Email: jperez@mail.com
+        
+08:44:07 AM: DEBUG [persona.py:50] 
+            Id_Persona: None, Nombre: Juan,
+            Apellido: Perez, Email: Jperez@mail.com
+        
+08:44:07 AM: DEBUG [persona.py:53] 
+            Id_Persona: 1, Nombre: None,
+            Apellido: None, Email: None
+        

@@ -24,5 +24,5 @@ class Cursor_del_pool:
 if __name__ == '__main__':
     with Cursor_del_pool() as cursor:
         log.debug(f'Dentro del bloque with')
-        cursor.execute('SELECT * FROM persona ORDER BY id_persona')
+        cursor.execute('SELECT * FROM usuario ORDER BY id_usuario')
         log.debug(cursor.fetchall())

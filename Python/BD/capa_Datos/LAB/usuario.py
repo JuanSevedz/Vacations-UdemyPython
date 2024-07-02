@@ -1,53 +1,43 @@
 from logger_base import log
 
-class Persona:
-    def __init__(self, id_persona = None, nombre = None, apellido = None, email = None):
-        self._id_persona = id_persona
-        self._nombre = nombre
-        self._apellido = apellido
-        self._email = email
+
+class Usuario:
+    def __init__(self, id_usuario=None, username=None, password=None):
+        self._id_usuario = id_usuario
+        self._username = username
+        self._password = password
 
     def __str__(self):
         return f'''
-            Id_Persona: {self._id_persona}, Nombre: {self._nombre},
-            Apellido: {self._apellido}, Email: {self._email}
+            Id_Usuario: {self._id_usuario}, Username: {self._username},
+            password: {self._password}
         '''
 
     @property
-    def id_persona(self):
-        return self._id_persona
-    @id_persona.setter
-    def id_persona(self, id_persona):
-        self._id_persona = id_persona
+    def id_usuario(self):
+        return self._id_usuario
+
+    @id_usuario.setter
+    def id_usuario(self, id_usuario):
+        self._id_usuario = id_usuario
 
     @property
-    def nombre(self):
-        return self._nombre
-    @nombre.setter
-    def nombre(self, nombre):
-        self._nombre = nombre
+    def username(self):
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        self._username = username
 
     @property
-    def apellido(self):
-        return self._apellido
-    @apellido.setter
-    def apellido(self, apellido):
-        self._apellido = apellido
+    def password(self):
+        return self._password
 
-    @property
-    def email(self):
-        return self._email
-    @email.setter
-    def email(self, email):
-        self._email = email
+    @password.setter
+    def apellido(self, password):
+        self._password = password
 
 
 if __name__ == '__main__':
-    persona1 = Persona(1, 'Juan', 'Perez', 'jperez@mail.com')
-    log.debug(persona1)
-    # Simular un insert
-    persona1 = Persona(nombre='Juan', apellido='Perez', email='Jperez@mail.com')
-    log.debug(persona1)
-    # Simular un delete
-    persona1 =Persona(id_persona=1)
+    persona1 = Usuario(3, 'Juansevedz', 'sara123')
     log.debug(persona1)

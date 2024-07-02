@@ -1,10 +1,9 @@
 from logger_base import log
-import psycopg2 as bd
 from psycopg2 import pool
 import sys
 
 class Conexion:
-    _DATABASE = 'test_db'
+    _DATABASE = 'usuario'
     _USERNAME = 'postgres'
     _PASSWORD = 'Sarita2023'
     _DB_PORT = '5432'

@@ -1,10 +1,10 @@
 import logging as log
 
-log.basicConfig(level=log.DEBUG,
+log.basicConfig(level=log.INFO,
                 format='%(asctime)s: %(levelname)s [%(filename)s:%(lineno)s] %(message)s',
                 datefmt='%I:%M:%S %p',
                 handlers=[
-                    log.FileHandler('capa_datos.log'),
+                    log.FileHandler('registro_lab_usuarios.log'),
                     log.StreamHandler()
                 ]
                 )
