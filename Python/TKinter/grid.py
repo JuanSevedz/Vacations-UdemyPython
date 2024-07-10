@@ -22,7 +22,7 @@ def evento3():
     boton3.config(text='Se presionó el boton 3')
 
 def evento4():
-    boton4.config(text='Se presionó el boton 4')
+    boton4.config(text='Se presionó el boton 4', fg='Blue', relief=tk.GROOVE, bg='yellow')
 
 boton1 = ttk.Button(ventana, text= 'Botón 1', command=evento1)
 boton1.grid(row=0, column=0, sticky='NSWE')
@@ -33,7 +33,7 @@ boton2.grid(row=1, column=0, sticky='NSWE')
 boton3 = ttk.Button(ventana, text='Botón 3', command=evento3)
 boton3.grid(row=0, column=1, sticky='NSWE')
 
-boton4 = ttk.Button(ventana, text='Botón 4', command=evento4)
+boton4 = tk.Button(ventana, text='Botón 4', command=evento4)
 boton4.grid(row=1, column=1, sticky='NSWE')
 
 ventana.mainloop()
