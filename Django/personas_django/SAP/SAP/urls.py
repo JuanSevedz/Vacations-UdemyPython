@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from personas.views import detallePersona, nuevaPersona
+from personas.views import detallePersona, nuevaPersona, editar_persona, eliminar_persona
 from webapp.views import bienvenido
 
 urlpatterns = [
@@ -26,5 +26,7 @@ urlpatterns = [
     path('', bienvenido, name='index'),
     path('detalle_persona/<int:id>', detallePersona),
     path('nueva_persona', nuevaPersona),
+    path('editar_persona/<int:id>', editar_persona),
+    path('eliminar_persona/<int:id>', eliminar_persona),
 
 ]
