@@ -1,0 +1,23 @@
+h1{
+    color: blue;
+}
+p{
+    color: red;
+    background-color: darkcyan;
+    padding: 15px;
+    border: 10px solid powderblue;
+    border-radius: 20px;
+    /* esta es la forma larga:
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; */
+
+    /* esta es la forma corta: */
+    margin: 50px 10px 20px 10px;
+
+
+}
+body{
+    background-color: yellow;
+}
