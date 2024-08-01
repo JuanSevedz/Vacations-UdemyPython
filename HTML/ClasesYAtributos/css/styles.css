@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    color: #560bad;
+    margin: 15px;
+}
+#titulo_principal{
+    color: aqua;
+    text-align: center;
+    
+}
+h2{
+    color: brown;
+}
+p{
+    color: #457b9d;
+}
+.tarjeta{
+    border: 10px solid #560bad;
+    background-color: #f1fadd;
+    text-align: center;
+    padding: 20px;
+    margin: 80px 100px;
+
+}
+.java{
+    color: red;
+}
+.python{
+    color: blue;
+}
+.c{
+    color: green;
+}
