@@ -1,0 +1,34 @@
+/* Selector universal(se aplica a toda la página) */
+*{
+    background-color: aquamarine;
+}
+/* Para un elemento en específico */
+h1{
+    color: blue;
+    text-align: center;
+}
+/* Id en css */
+#titulo{
+    color: blueviolet;
+    text-align: center;
+
+}
+/* Clases en css */
+.centrar{
+    text-align: center;
+}
+.texto_grande{
+    font-size: 30px;
+}
+/* Para aplicarlo a avarios elementos a la vez */
+h2, h3, h4{
+    color: red;
+    text-align: right;
+}
+/* Subclases */
+div.centrar{
+    text-align: left;
+    color: darkblue;
+    font-size: 35px;
+    font-family: monospace;
+}
